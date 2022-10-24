@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: green;
+    background-color: #23242a;
+}
+
+#dealer-cards img{
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+#player-cards img{
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+#hit{
+    width: 125px;
+    height: 50px;
+    font-size: 30px;
+    color: gold;
+    background-color: red;
+    font-family: 'Great Vibes', cursive;
+}
+#stay{
+    width: 125px;
+    height: 50px;
+    font-size: 30px;
+    color: gold;
+    background-color: red;
+    font-family: 'Great Vibes', cursive;
+}
