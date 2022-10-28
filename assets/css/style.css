@@ -255,6 +255,7 @@ footer .container{
     border-radius: 17px;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 .condition{
     color: #45f3ff;
@@ -323,7 +324,7 @@ footer .container{
         transition: 0.3s;
         margin-left: 45%;
         margin-top: 20px;
-    }
+    }    
 }
 
 
@@ -475,7 +476,7 @@ footer .container{
         margin-top: 20px;
     }
     footer{
-        padding: 0 1rem;
+        padding: 7rem 1rem;
     }
     footer .text{
         order: 3;
@@ -483,9 +484,52 @@ footer .container{
         text-align: center;
         margin-top: 1rem;
     }
-    
+    .signupBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 300px;
+        height: 500px;
+        background: #1c1c1c;
+        border-radius: 8px;  
+        margin-top: 5%;
+        overflow: hidden;
+    }
+    .signupBox::before{
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 520px;
+        background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+    }
+    .signupBox::after{
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 50px;
+        height: 320px;
+        background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+        animation-delay: -3s;
+    } 
 }
 /* <!==============================================  LOGIN PAGE ================================================================================!>  */
+#login{
+    overflow-x: hidden;
+    background-color: #23242a; 
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .box{
     display: flex;
     justify-content: center;
@@ -495,7 +539,6 @@ footer .container{
     height: 420px;
     background: #1c1c1c;
     border-radius: 8px;  
-    margin-left: 38%;
     margin-top: 5%;
     overflow: hidden;
 }
@@ -561,7 +604,7 @@ footer .container{
     letter-spacing: 0.05em;
     z-index: 10;
 }
-.inputBox span{
+.inputBox label{
     position: absolute;
     left: 0;
     padding: 20px 10px 10px;
@@ -571,8 +614,8 @@ footer .container{
     letter-spacing: 0.05em;
     transition: 0.5s;
 }
-.inputBox input:valid ~ span,
-.inputBox input:focus ~ span{
+.inputBox input:valid ~ label,
+.inputBox input:focus ~ label{
     color: #45f3ff;
     transform: translateX(0px) translateY(-34px);
     font-size: 0.75em;
@@ -621,7 +664,104 @@ input[type="submit"]{
 input[type="submit"]:active{
     opacity: 0.8;
 }
-/* <!==============================================  LOGIN PAGE ================================================================================!>  */
+
+/* <!==============================================  SIGNUP PAGE ================================================================================!>  */
+#signup{
+    overflow-x: hidden;
+    background-color: #23242a; 
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signupBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 750px;
+    background: #1c1c1c;
+    border-radius: 8px;  
+    margin-top: 5%;
+    overflow: hidden;
+}
+.signupBox::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 580px;
+    height: 1020px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.signupBox::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.connect{
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #1c1c1c;
+}
+.connect:active{
+    opacity: 0.8;
+}
+/* <!==============================================  GAME PAGE ================================================================================!>  */
+.prezgamesection{
+    background-image: url(/assets/img/banner_vip.jpg);
+}
+.gametitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #45f3ff;
+    font-size: 2rem;
+}
+.presentation .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.blackJack{
+    margin-left: 300px;
+}
+.blackJack img{
+    width: 400px;
+}
+.blackJack .navbtn{
+    margin-top: 20px;
+}
+.playbj{
+    margin-left: 450px;
+}
 
 
 
@@ -631,6 +771,33 @@ input[type="submit"]:active{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#BJ{
+    text-align: center;
+}
 #dealer-cards img{
     height: 175px;
     width: 125px;
