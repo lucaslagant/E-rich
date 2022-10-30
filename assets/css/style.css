@@ -209,7 +209,7 @@ body.open .hamburger .bar:last-child {
 /* Call-to-action  */
 
 .sectioncalltoaction{
-    background-image: url(/assets/img/banner_vip.jpg);       
+    background-image: url(/assets/img/banner_vip.jpg);
 }
 .call-to-action{
     display: inline-block;
@@ -734,37 +734,130 @@ input[type="submit"]:active{
     opacity: 0.8;
 }
 /* <!==============================================  GAME PAGE ================================================================================!>  */
-.prezgamesection{
-    background-image: url(/assets/img/banner_vip.jpg);
+#game{
+    display: grid;
+    grid-template-columns: 1fr 50%;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-left: 100px;
+    min-height: 100vh;
 }
-.gametitle{
+.card{
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background: #23242a;
+    transition: 0.5s;
+}
+.card:hover{
+    height: 450px;
+}
+.card .lines{
+    position: absolute;
+    inset: 0;
+    background: #1c1c1c;
+    overflow: hidden;
+}
+.card .lines::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent, #45f3ff,#45f3ff,transparent);
+    animation: animate2 4s linear infinite;
+}
+@keyframes animate2{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.card .lines::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #23242a;
+}
+.card .imgBx{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #1c1c1c;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+}
+.car:hover .imgBx{
+    width: 250px;
+    height: 250px;
+}
+.card .imgBx::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 150px;
+    transform: translate(-50%, 50%);
+    background: linear-gradient(transparent, #ff3c7b, #ff3c7b, #ff3c7b, transparent);
+    animation: animate3 6s linear infinite;
+}
+@keyframes animate3{
+    0%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+}
+.card .imgBx::after{
+    content: '';
+    position: absolute;
+    background: #23242a;
+    inset: 3px;
+}
+.card .imgBx img{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: 1;
+    width: 95%;
+    height: 95%;
+}
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card .content .details{
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(145px);
+}
+.card:hover .content .details{
+    margin-bottom: 60px;
+    transform: translateY(0px);
+}
+.card .content .details h2{
+    font-size: 1.25em;
+    font-weight: 600;
     color: #45f3ff;
-    font-size: 2rem;
+    line-height: 1.2em;    
 }
-.presentation .text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-}
-.blackJack{
-    margin-left: 300px;
-}
-.blackJack img{
-    width: 400px;
-}
-.blackJack .navbtn{
-    margin-top: 20px;
-}
-.playbj{
-    margin-left: 450px;
-}
-
-
-
 
 
 
