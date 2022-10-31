@@ -885,7 +885,7 @@ input[type="submit"]:active{
     line-height: 1.2em;
     margin-bottom: 70px;    
 }
-/* <!==============================================  Black Jack PAGE ================================================================================!>  */
+/* <!==============================================  BLACK JACK PAGE ================================================================================!>  */
 #BJ{
     text-align: center;
 }
@@ -923,4 +923,139 @@ input[type="submit"]:active{
 }
 #result{
     color: #45f3ff;
+}
+/* <!==============================================  ROULETTE PAGE ================================================================================!>  */
+.roulette{
+    --width :67px;
+    --radius : 250px;
+    --cont : calc(360deg / 36);
+    list-style: none;
+    margin: 0;
+    display: block;
+    width: var(--radius);
+    height: var(--radius);
+}
+.roulette_items{
+    width: var(--width);
+    height: calc(var(--radius) / 2);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(50% - var(--width) / 2);
+    transform-origin: 50% 100%;
+    background-color: transparent;
+    border-left: calc(var(--width) / 2) solid transparent;
+    border-right: calc(var(--width)/ 2) solid transparent;
+    border-top: calc(var(--radius) / 2) solid #45f3ff;    
+}
+.roulette_items:nth-child(odd){
+    border-top-color: #ff3c7b;
+}
+.roulette_items:nth-child(1){
+    transform: rotateZ(calc(1 * var(--cont)));
+}
+.roulette_items:nth-child(2){
+    transform: rotateZ(calc(2 * var(--cont)));
+}
+.roulette_items:nth-child(3){
+    transform: rotateZ(calc(3 * var(--cont)));
+}
+.roulette_items:nth-child(4){
+    transform: rotateZ(calc(4 * var(--cont)));
+}
+.roulette_items:nth-child(5){
+    transform: rotateZ(calc(5 * var(--cont)));
+}
+.roulette_items:nth-child(6){
+    transform: rotateZ(calc(6 * var(--cont)));
+}
+.roulette_items:nth-child(7){
+    transform: rotateZ(calc(7 * var(--cont)));
+}
+.roulette_items:nth-child(8){
+    transform: rotateZ(calc(8 * var(--cont)));
+}
+.roulette_items:nth-child(9){
+    transform: rotateZ(calc(9 * var(--cont)));
+}
+.roulette_items:nth-child(10){
+    transform: rotateZ(calc(10 * var(--cont)));
+}
+.roulette_items:nth-child(11){
+    transform: rotateZ(calc(11 * var(--cont)));
+}
+.roulette_items:nth-child(12){
+    transform: rotateZ(calc(12 * var(--cont)));
+}
+.roulette_items:nth-child(13){
+    transform: rotateZ(calc(13 * var(--cont)));
+}
+.roulette_items:nth-child(14){
+    transform: rotateZ(calc(14 * var(--cont)));
+}
+.roulette_items:nth-child(15){
+    transform: rotateZ(calc(15 * var(--cont)));
+}
+.roulette_items:nth-child(16){
+    transform: rotateZ(calc(16 * var(--cont)));
+}
+.roulette_items:nth-child(17){
+    transform: rotateZ(calc(17 * var(--cont)));
+}
+.roulette_items:nth-child(18){
+    transform: rotateZ(calc(18 * var(--cont)));
+}
+.roulette_items:nth-child(19){
+    transform: rotateZ(calc(19 * var(--cont)));
+}
+.roulette_items:nth-child(20){
+    transform: rotateZ(calc(20 * var(--cont)));
+}
+.roulette_items:nth-child(21){
+    transform: rotateZ(calc(21 * var(--cont)));
+}
+.roulette_items:nth-child(22){
+    transform: rotateZ(calc(22 * var(--cont)));
+}
+.roulette_items:nth-child(23){
+    transform: rotateZ(calc(23 * var(--cont)));
+}
+.roulette_items:nth-child(24){
+    transform: rotateZ(calc(24 * var(--cont)));
+}
+.roulette_items:nth-child(25){
+    transform: rotateZ(calc(25 * var(--cont)));
+}
+.roulette_items:nth-child(26){
+    transform: rotateZ(calc(26 * var(--cont)));
+}
+.roulette_items:nth-child(27){
+    transform: rotateZ(calc(27 * var(--cont)));
+}
+.roulette_items:nth-child(28){
+    transform: rotateZ(calc(28 * var(--cont)));
+}
+.roulette_items:nth-child(29){
+    transform: rotateZ(calc(29 * var(--cont)));
+}
+.roulette_items:nth-child(30){
+    transform: rotateZ(calc(30 * var(--cont)));
+}
+.roulette_items:nth-child(31){
+    transform: rotateZ(calc(31 * var(--cont)));
+}
+.roulette_items:nth-child(32){
+    transform: rotateZ(calc(32 * var(--cont)));
+}
+.roulette_items:nth-child(33){
+    transform: rotateZ(calc(33 * var(--cont)));
+}
+.roulette_items:nth-child(34){
+    transform: rotateZ(calc(34 * var(--cont)));
+}
+.roulette_items:nth-child(35){
+    transform: rotateZ(calc(35 * var(--cont)));
+}
+.roulette_items:nth-child(36){
+    transform: rotateZ(calc(36 * var(--cont)));
 }
