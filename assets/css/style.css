@@ -324,7 +324,16 @@ footer .container{
         transition: 0.3s;
         margin-left: 45%;
         margin-top: 20px;
-    }    
+    }
+    .card .content .details h2{
+        margin-bottom: 70px;
+    } 
+    .game-gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 5rem;
+        margin-bottom: 50px;
+    }  
 }
 
 
@@ -412,9 +421,18 @@ footer .container{
         grid-template-columns: 1fr 60%;
         position: relative;
     }
+    
+    .card .content .details h2{
+        margin-bottom: 70px;
+    }
+
 }
 /* <!---------------------------500px screen -------------------------------------!> */
 @media (max-width : 500px) {
+    section{
+        position: relative;
+        padding: 4rem ;
+    }
     .container{
         padding: 0 1rem;
     }
@@ -518,7 +536,11 @@ footer .container{
         transform-origin: bottom right;
         animation: animate 6s linear infinite;
         animation-delay: -3s;
+    }   
+    .card .content .details h2{
+        margin-bottom: 70px;
     } 
+    
 }
 /* <!==============================================  LOGIN PAGE ================================================================================!>  */
 #login{
@@ -734,15 +756,19 @@ input[type="submit"]:active{
     opacity: 0.8;
 }
 /* <!==============================================  GAME PAGE ================================================================================!>  */
-#game{
-    display: grid;
-    grid-template-columns: 1fr 50%;
-    justify-content: space-between;
+#game{  
     margin-top: 80px;
     margin-left: 100px;
-    min-height: 100vh;
+
+}
+.game-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5rem;
+    margin-bottom: 50px;
 }
 .card{
+    grid-template-rows: 1fr auto;
     position: relative;
     width: 350px;
     height: 190px;
@@ -856,7 +882,8 @@ input[type="submit"]:active{
     font-size: 1.25em;
     font-weight: 600;
     color: #45f3ff;
-    line-height: 1.2em;    
+    line-height: 1.2em;
+    margin-bottom: 70px;    
 }
 
 
