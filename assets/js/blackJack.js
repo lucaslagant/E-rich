@@ -131,4 +131,7 @@ function reduceAce(player, playeracecount) {
     return player;
 }
 
-// ROULETTE 
+let replay = document.getElementById("replay");
+replay.addEventListener("click", function() {
+    window.location.reload();
+})
