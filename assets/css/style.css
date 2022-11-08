@@ -34,6 +34,10 @@ a{
 }
 ul{
     list-style: none;
+    position: relative;
+    display: flex;
+    gap: 50px;
+
 }
 .container{
     position: relative;
@@ -935,3 +939,182 @@ input[type="submit"]:active{
     color: #45f3ff;
 }
 /* <!==============================================  ROULETTE PAGE ================================================================================!>  */
+.effect::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#08ff12, #0791ff);
+    z-index: 10;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
+.circle{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #23242a;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff5 ,
+    0 0 0 20px #333,
+    0 0 0 22px #fff,
+    0 0 50px #fff,
+    0 0 450px #fff;
+}
+.circle::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 170px;
+    border-radius: 2px;
+    background: linear-gradient(0deg, transparent, #fff);
+    transform-origin: bottom;
+    animation: animateNiddles 20s steps(60) infinite;
+}
+.circle::after{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 130px;
+    border-radius: 2px;
+    background: linear-gradient(0deg, transparent, #fff);
+    transform-origin: bottom;
+    animation: animateNiddles 120s steps(60) infinite;
+}
+@keyframes animateNiddles
+{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+/* <!==============================================  CONTACT PAGE ================================================================================!>  */
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 3rem;
+    color: #fff;
+}
+.contact .content p{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.contactcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+.contactcontainer .contactInfo{
+    width: 50%;
+    display: flex;
+    background: #1c1c1c;
+    min-height: 400px;
+    flex-direction: column;
+}
+.contactcontainer .contactInfo .contactBox{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+}
+.contactcontainer .contactInfo .contactBox .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    transition: 0.5s;
+}
+.contactcontainer .contactInfo .contactBox:hover .icon{
+    background-color: #45f3ff;
+    color: #1c1c1c;
+}
+.contactcontainer .contactInfo .contactBox .descrition{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1em;
+    color: #45f3ff;
+    font-weight: 300;
+}
+.contactcontainer .contactForm{
+    position: relative;
+    width: 40%;
+    background: #fff;
+    min-height: 100px;
+}
+#socialnetwork{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.socialbtn{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 100px;
+}
+.socialbtn:hover{
+    z-index: 100000;
+    transform: scale(0.75);
+}
+.socialbtn::before{
+    content: '';
+    position: absolute;
+    inset: 30px;
+    box-shadow: 0 0 0 10px var(--clr),
+    0 0 0 20px #23242a,
+    0 0 0 22px var(--clr);
+    transition: 0.5s;
+}
+.socialbtn::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #23242a;
+    transform: rotate(45deg);
+}
+.socialbtn:hover::before{
+    inset: 0px;
+}
+ul li a{
+    position: relative;
+    text-decoration: none;
+    color: var(--clr);
+    z-index: 10;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+ul li:hover a{
+    font-size: 3rem;
+    filter: drop-shadow(0 0 20px var(--clr))
+    drop-shadow(0 0 40px var(--clr))
+    drop-shadow(0 0 60px var(--clr));
+}
