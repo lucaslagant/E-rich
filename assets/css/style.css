@@ -996,7 +996,6 @@ input[type="submit"]:active{
 /* <!==============================================  CONTACT PAGE ================================================================================!>  */
 .contact{
     position: relative;
-    min-height: 100vh;
     padding: 50px 100px;
     display: flex;
     justify-content: center;
@@ -1027,7 +1026,6 @@ input[type="submit"]:active{
 .contactcontainer .contactInfo{
     width: 50%;
     display: flex;
-    background: #1c1c1c;
     min-height: 400px;
     flex-direction: column;
 }
@@ -1065,10 +1063,52 @@ input[type="submit"]:active{
     background: #fff;
     min-height: 100px;
 }
-#socialnetwork{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+.contactcontainer .contactForm{
+    position: relative;
+    width: 40%;
+    background: #fff;
+    min-height: 100px;
+    padding: 60px;
+}
+.contactcontainer .contactForm h2{
+    font-size: 2em;
+    color: #1c1c1c;
+    font-weight: 500;
+}
+.contactcontainer .contactForm .contactinput{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.contactcontainer .contactForm .contactinput input,
+.contactcontainer .contactForm .contactinput textarea{
+
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #1c1c1c;
+    outline: none;
+    resize: none;
+}
+.contactcontainer .contactForm .contactinput span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #8f8f8f;
+    transition: 0.5s;
+}
+.contactcontainer .contactForm .contactinput input:focus ~ span,
+.contactcontainer .contactForm .contactinput textarea:focus ~ span
+.contactcontainer .contactForm .contactinput input:valid ~ span,
+.contactcontainer .contactForm .contactinput textarea:valid ~ span{
+    color: #45f3ff;
+    font-size: 0.9rem;
+    transform: translateY(-20px);
 }
 .socialbtn{
     position: relative;
@@ -1079,7 +1119,7 @@ input[type="submit"]:active{
     align-items: center;
     cursor: pointer;
     transition: 0.5s;
-    margin-left: 100px;
+    margin-top: 150px;
 }
 .socialbtn:hover{
     z-index: 100000;
