@@ -36,8 +36,6 @@ ul{
     list-style: none;
     position: relative;
     display: flex;
-    gap: 50px;
-
 }
 .container{
     position: relative;
@@ -263,288 +261,6 @@ footer .container{
 }
 .condition{
     color: #45f3ff;
-}
-/* RESPONSIVE */
-
-/* <!---------------------------1000px screen -------------------------------------!> */
-@media (max-width : 1000px) {
-    .text{
-        font-size: 0.8rem;
-        margin: 1.3rem 0;
-    }
-    nav.container{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        background-color: #1c1c1c;
-        border-radius: 17px;
-        margin-top: 1rem;
-    }
-    h1{
-        font-size: 2rem;       
-    }
-    .navbtn2{
-        display: inline-block;
-        padding: 0.9rem 1.75rem;
-        border-radius: 17px;
-        background-color: #45f3ff;
-        color: #1c1c1c;
-        font-size: 0.85rem;
-        letter-spacing: 0.4px;
-        text-transform: capitalize;
-        border: none;
-        outline: none;
-        font-family: inherit;
-        cursor: pointer;
-        transition: 0.3s;
-        margin-left: 5px;
-    }
-    .call-to-action{
-        display: inline-block;
-        padding: 1rem 1.7rem;
-        border-radius: 30px;
-        background-color: #45f3ff;
-        color: #1c1c1c;
-        font-size: 1rem;
-        letter-spacing: 0.4px;
-        text-transform: capitalize;
-        font-family: inherit;
-        cursor: pointer;
-        transition: 0.3s;
-        margin-left: 40%;
-        margin-top: 20px;
-    }
-    .call-to-action2{
-        display: inline-block;
-        padding: 1rem 1.7rem;
-        border-radius: 30px;
-        background-color: #45f3ff;
-        color: #1c1c1c;
-        font-size: 1rem;
-        letter-spacing: 0.4px;
-        text-transform: capitalize;
-        font-family: inherit;
-        cursor: pointer;
-        transition: 0.3s;
-        margin-left: 45%;
-        margin-top: 20px;
-    }
-    .card .content .details h2{
-        margin-bottom: 70px;
-    } 
-    .game-gallery{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 5rem;
-        margin-bottom: 50px;
-    }  
-}
-
-
-/* <!---------------------------768px screen -------------------------------------!> */
-@media (max-width : 768px) {
-    section{
-        position: relative;
-        padding: 4.5rem ;
-    }
-    .hamburger{
-        display: block;
-    }
-    .links{
-        order: 3;
-        flex-basis: 100%; /*  width : 100% */
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0.5rem 0 2rem;
-        transition: 0.3s;
-    }
-    .navbtn2{
-        display: inline-block;
-        padding: 0.9rem 1.75rem;
-        border-radius: 17px;
-        background-color: #45f3ff;
-        color: #1c1c1c;
-        font-size: 0.85rem;
-        letter-spacing: 0.4px;
-        text-transform: capitalize;
-        border: none;
-        outline: none;
-        font-family: inherit;
-        cursor: pointer;
-        transition: 0.3s;
-        margin-top: 5px;
-    }
-    header nav{
-        justify-content: space-between;
-    }
-    .links ul {
-        position: relative;
-        flex-direction: column;
-    }
-    .nav-link {
-        color: #45f3ff;
-        font-weight: 500;
-    }
-    .doublebtn{
-        margin: 0;
-    }
-    .links ul::after{
-        content: "";
-        position: absolute;
-        width: 0%;
-        height: 0.5px;
-        background-color: #45f3ff;
-        top: -0.5rem;
-        left: 50%;
-    }    
-    header{
-        height: 570px;
-        max-height: 100px;
-        overflow: hidden;
-    }
-    header.scrolled{
-        height: 570px;
-        max-height: 80px;        
-    }
-    body.open header{
-        max-height: 570px;
-    }
-    .about .container{
-        display: grid;
-        align-items: center;
-    }
-    .about .text{
-        margin: 1rem;
-    }
-    .aboutimg{
-        width: 25rem;
-    }
-    .about-grid{
-        display: grid;
-        grid-template-columns: 1fr 60%;
-        position: relative;
-    }
-    
-    .card .content .details h2{
-        margin-bottom: 70px;
-    }
-
-}
-/* <!---------------------------500px screen -------------------------------------!> */
-@media (max-width : 500px) {
-    section{
-        position: relative;
-        padding: 4rem ;
-    }
-    .container{
-        padding: 0 1rem;
-    }
-    .about-grid{
-        display: grid;
-        grid-template-columns: 1fr;
-        position: relative;
-    }
-    .about .text{
-        font-size: 1rem;
-    }
-    h1{
-        font-size: 1.5rem;       
-    }
-    .navbtn2{
-        display: inline-block;
-        padding: 0.9rem 1.75rem;
-        border-radius: 17px;
-        background-color: #45f3ff;
-        color: #1c1c1c;
-        font-size: 0.85rem;
-        letter-spacing: 0.4px;
-        text-transform: capitalize;
-        border: none;
-        outline: none;
-        font-family: inherit;
-        cursor: pointer;
-        transition: 0.3s;
-        margin-top: 5px;
-    }
-    .call-to-action{
-        display: inline-block;
-        padding: 1rem 1rem;
-        border-radius: 30px;
-        background-color: #45f3ff;
-        color: #1c1c1c;
-        font-size: 1rem;
-        letter-spacing: 0.4px;
-        text-transform: capitalize;
-        font-family: inherit;
-        cursor: pointer;
-        transition: 0.3s;
-        margin-left: 35%;
-        margin-top: 20px;
-    }
-    .call-to-action2{
-        display: inline-block;
-        padding: 1rem 1rem;
-        border-radius: 30px;
-        background-color: #45f3ff;
-        color: #1c1c1c;
-        font-size: 1rem;
-        letter-spacing: 0.4px;
-        text-transform: capitalize;
-        font-family: inherit;
-        cursor: pointer;
-        transition: 0.3s;
-        margin-left: 45%;
-        margin-top: 20px;
-    }
-    footer{
-        padding: 7rem 1rem;
-    }
-    footer .text{
-        order: 3;
-        flex-basis: 100%;
-        text-align: center;
-        margin-top: 1rem;
-    }
-    .signupBox{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        width: 300px;
-        height: 500px;
-        background: #1c1c1c;
-        border-radius: 8px;  
-        margin-top: 5%;
-        overflow: hidden;
-    }
-    .signupBox::before{
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 380px;
-        height: 520px;
-        background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
-        transform-origin: bottom right;
-        animation: animate 6s linear infinite;
-    }
-    .signupBox::after{
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 50px;
-        height: 320px;
-        background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
-        transform-origin: bottom right;
-        animation: animate 6s linear infinite;
-        animation-delay: -3s;
-    }   
-    .card .content .details h2{
-        margin-bottom: 70px;
-    } 
-    
 }
 /* <!==============================================  LOGIN PAGE ================================================================================!>  */
 #login{
@@ -1082,7 +798,6 @@ input[type="submit"]:active{
 }
 .contactcontainer .contactForm .contactinput input,
 .contactcontainer .contactForm .contactinput textarea{
-
     width: 100%;
     padding: 5px 0;
     font-size: 1.1em;
@@ -1109,6 +824,9 @@ input[type="submit"]:active{
     color: #45f3ff;
     font-size: 0.9rem;
     transform: translateY(-20px);
+}
+.socialList{
+    gap: 50px;
 }
 .socialbtn{
     position: relative;
@@ -1152,9 +870,328 @@ ul li a{
     font-size: 2rem;
     transition: 0.5s;
 }
-ul li:hover a{
+.socialList .socialbtn:hover .socialLinks{
     font-size: 3rem;
     filter: drop-shadow(0 0 20px var(--clr))
     drop-shadow(0 0 40px var(--clr))
     drop-shadow(0 0 60px var(--clr));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!==============================================  RESPONSIVE ================================================================================!>  */
+
+
+/* <!---------------------------1000px screen -------------------------------------!> */
+@media (max-width : 1000px) {
+    .text{
+        font-size: 0.8rem;
+        margin: 1.3rem 0;
+    }
+    nav.container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #1c1c1c;
+        border-radius: 17px;
+        margin-top: 1rem;
+    }
+    h1{
+        font-size: 2rem;       
+    }
+    .navbtn2{
+        display: inline-block;
+        padding: 0.9rem 1.75rem;
+        border-radius: 17px;
+        background-color: #45f3ff;
+        color: #1c1c1c;
+        font-size: 0.85rem;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        border: none;
+        outline: none;
+        font-family: inherit;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-left: 5px;
+    }
+    .call-to-action{
+        display: inline-block;
+        padding: 1rem 1.7rem;
+        border-radius: 30px;
+        background-color: #45f3ff;
+        color: #1c1c1c;
+        font-size: 1rem;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        font-family: inherit;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-left: 40%;
+        margin-top: 20px;
+    }
+    .call-to-action2{
+        display: inline-block;
+        padding: 1rem 1.7rem;
+        border-radius: 30px;
+        background-color: #45f3ff;
+        color: #1c1c1c;
+        font-size: 1rem;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        font-family: inherit;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-left: 45%;
+        margin-top: 20px;
+    }
+    .card .content .details h2{
+        margin-bottom: 70px;
+    } 
+    .game-gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 5rem;
+        margin-bottom: 50px;
+    }
+    .contact{
+        padding: 50px;
+    }
+    .contactcontainer{
+        flex-direction: column;
+    }
+    .contactcontainer .contactInfo ,
+    .contactcontainer .contactForm{
+        width: 100%;
+    }
+    .contactcontainer .contactForm{
+        padding: 50px 30px;
+    }
+}
+/* <!---------------------------768px screen -------------------------------------!> */
+@media (max-width : 768px) {
+    section{
+        position: relative;
+        padding: 4.5rem ;
+    }
+    .hamburger{
+        display: block;
+    }
+    .links{
+        order: 3;
+        flex-basis: 100%; /*  width : 100% */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 0 2rem;
+        transition: 0.3s;
+    }
+    .navbtn2{
+        display: inline-block;
+        padding: 0.9rem 1.75rem;
+        border-radius: 17px;
+        background-color: #45f3ff;
+        color: #1c1c1c;
+        font-size: 0.85rem;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        border: none;
+        outline: none;
+        font-family: inherit;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 5px;
+    }
+    header nav{
+        justify-content: space-between;
+    }
+    .links ul {
+        position: relative;
+        flex-direction: column;
+    }
+    .nav-link {
+        color: #45f3ff;
+        font-weight: 500;
+    }
+    .doublebtn{
+        margin: 0;
+    }
+    .links ul::after{
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 0.5px;
+        background-color: #45f3ff;
+        top: -0.5rem;
+        left: 50%;
+    }    
+    header{
+        height: 570px;
+        max-height: 100px;
+        overflow: hidden;
+    }
+    header.scrolled{
+        height: 570px;
+        max-height: 80px;        
+    }
+    body.open header{
+        max-height: 570px;
+    }
+    .about .container{
+        display: grid;
+        align-items: center;
+    }
+    .about .text{
+        margin: 1rem;
+    }
+    .aboutimg{
+        width: 25rem;
+    }
+    .about-grid{
+        display: grid;
+        grid-template-columns: 1fr 60%;
+        position: relative;
+    }    
+    .card .content .details h2{
+        margin-bottom: 70px;
+    }
+    .contact .content h2{
+        font-size: 1rem;
+        color: #fff;
+    }
+    .contact .content p{
+        color: #fff;
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+    .contactcontainer .contactForm h2{
+        font-size: 1em;
+        color: #1c1c1c;
+        font-weight: 500;
+    }
+
+}
+/* <!---------------------------500px screen -------------------------------------!> */
+@media (max-width : 500px) {
+    section{
+        position: relative;
+        padding: 4rem ;
+    }
+    .container{
+        padding: 0 1rem;
+    }
+    .about-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+    .about .text{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1.5rem;       
+    }
+    .navbtn2{
+        display: inline-block;
+        padding: 0.9rem 1.75rem;
+        border-radius: 17px;
+        background-color: #45f3ff;
+        color: #1c1c1c;
+        font-size: 0.85rem;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        border: none;
+        outline: none;
+        font-family: inherit;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 5px;
+    }
+    .call-to-action{
+        display: inline-block;
+        padding: 1rem 1rem;
+        border-radius: 30px;
+        background-color: #45f3ff;
+        color: #1c1c1c;
+        font-size: 1rem;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        font-family: inherit;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-left: 35%;
+        margin-top: 20px;
+    }
+    .call-to-action2{
+        display: inline-block;
+        padding: 1rem 1rem;
+        border-radius: 30px;
+        background-color: #45f3ff;
+        color: #1c1c1c;
+        font-size: 1rem;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        font-family: inherit;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-left: 45%;
+        margin-top: 20px;
+    }
+    footer{
+        padding: 7rem 1rem;
+    }
+    footer .text{
+        order: 3;
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .signupBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 300px;
+        height: 500px;
+        background: #1c1c1c;
+        border-radius: 8px;  
+        margin-top: 5%;
+        overflow: hidden;
+    }
+    .signupBox::before{
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 520px;
+        background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+    }
+    .signupBox::after{
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 50px;
+        height: 320px;
+        background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+        animation-delay: -3s;
+    }   
+    .card .content .details h2{
+        margin-bottom: 70px;
+    } 
+    
 }
