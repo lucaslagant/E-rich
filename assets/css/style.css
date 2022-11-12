@@ -228,7 +228,7 @@ body.open .hamburger .bar:last-child {
     margin-left: 40%;
     margin-top: 20px;
 }
-.call-to-action2{
+/* .call-to-action2{
     display: inline-block;
     padding: 1rem 1.95rem;
     border-radius: 30px;
@@ -244,8 +244,8 @@ body.open .hamburger .bar:last-child {
     margin-top: 20px;
 }
 .shopcalltoaction{
-    background-image: url(/assets/img/shop.jpg);
-}
+    background-image: url(/assets/img/testbanjeux.png);
+} */
 /* FOOTER */
 footer{
     padding: 4rem 0;

@@ -27,7 +27,7 @@ const validEmail = function(inputEmail){
 }
 
 // Message 
-console.log(form.message);
+// console.log(form.message);
 form.message.addEventListener('change', function(){
     validMessage(this);
 });
@@ -36,5 +36,5 @@ const validMessage = function(textareaMessage){
     let messageRegex = new RegExp('^[a-zA-Z1-9]+$');
 
     let testMessage = messageRegex.test(textareaMessage.value);
-    console.log(testMessage);
-}
+    // console.log(testMessage);
+}  
