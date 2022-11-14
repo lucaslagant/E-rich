@@ -228,24 +228,23 @@ body.open .hamburger .bar:last-child {
     margin-left: 40%;
     margin-top: 20px;
 }
-/* .call-to-action2{
-    display: inline-block;
-    padding: 1rem 1.95rem;
-    border-radius: 30px;
-    background-color: #45f3ff;
-    color: #1c1c1c;
-    font-size: 1.5rem;
-    letter-spacing: 0.4px;
-    text-transform: capitalize;
-    font-family: inherit;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-left: 45%;
-    margin-top: 20px;
+.secure{
+    background-color: #1c1c1c;
+    color: #45f3ff;
 }
-.shopcalltoaction{
-    background-image: url(/assets/img/testbanjeux.png);
-} */
+.allsecure{    
+    gap: 200px;
+    margin-left: 100px;
+}
+.security{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.txtplace{
+    margin-left: 10px;
+}
 /* FOOTER */
 footer{
     padding: 4rem 0;
@@ -976,6 +975,9 @@ ul li a{
     .contactcontainer .contactForm{
         padding: 50px 30px;
     }
+    .security{
+        font-size: 1.2rem;
+    }
 }
 /* <!---------------------------768px screen -------------------------------------!> */
 @media (max-width : 768px) {
@@ -1077,6 +1079,12 @@ ul li a{
         font-size: 1em;
         color: #1c1c1c;
         font-weight: 500;
+    }
+    .allsecure{    
+        gap: 50px;
+    }
+    .security{
+        font-size: 1rem;
     }
 
 }
@@ -1192,6 +1200,12 @@ ul li a{
     }   
     .card .content .details h2{
         margin-bottom: 70px;
-    } 
+    }
+    .allsecure{
+        margin-left: 0px;
+    }  
+    .security{
+        font-size: 1rem;
+    }
     
 }
