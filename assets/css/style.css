@@ -637,7 +637,7 @@ input[type="submit"]:active{
     border-color: #45f3ff;
     font-family: 'Poppins', sans-serif;
 }
-#replay{
+.replay{
     width: 125px;
     height: 50px;
     font-size: 20px;
@@ -650,61 +650,61 @@ input[type="submit"]:active{
 .h2{
     color: #45f3ff;
 }
-#result{
+.result{
     color: #45f3ff;
 }
 /* <!==============================================  ROULETTE PAGE ================================================================================!>  */
-.effect::before{
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(#08ff12, #0791ff);
-    z-index: 10;
-    pointer-events: none;
-    mix-blend-mode: multiply;
-}
-.circle{
+.app{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
     position: relative;
-    width: 500px;
-    height: 500px;
+}
+.marker{
+    position: absolute;
+    width: 60px;
+    left: 172px;
+    top: 20px;
+    z-index: 2;
+}
+.wheel{
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+}
+.btnRoulette{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #23242a;
-    border-radius: 50%;
-    box-shadow: 0 0 0 2px #fff5 ,
-    0 0 0 20px #333,
-    0 0 0 22px #fff,
-    0 0 50px #fff,
-    0 0 450px #fff;
+    margin-top: 100px;
 }
-.circle::before{
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 170px;
-    border-radius: 2px;
-    background: linear-gradient(0deg, transparent, #fff);
-    transform-origin: bottom;
-    animation: animateNiddles 20s steps(60) infinite;
+.blur{
+    animation: blur 10s;
 }
-.circle::after{
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 130px;
-    border-radius: 2px;
-    background: linear-gradient(0deg, transparent, #fff);
-    transform-origin: bottom;
-    animation: animateNiddles 120s steps(60) infinite;
+.black{
+    background-color: #121213;
 }
-@keyframes animateNiddles
-{
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+@keyframes blur{
     0%{
-        transform: translate(-50%,-50%) rotate(0deg);
+        filter: blur(0.5px);
     }
-    100%{
-        transform: translate(-50%,-50%) rotate(360deg);
+    30%{
+        filter: blur(1px);
+    }
+    50%{
+        filter: blur(2px);
+    }
+    80%{
+        filter: blur(1.5px);
+    }
+    95%{
+        filter: blur(0px);
     }
 }
 
@@ -875,15 +875,118 @@ ul li a{
     drop-shadow(0 0 40px var(--clr))
     drop-shadow(0 0 60px var(--clr));
 }
-
-
-
-
-
-
-
-
-
+/* <!==============================================  LOADING PAGE ================================================================================!>  */
+#loadingPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #121213;
+}
+.loader{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #23242a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    color: #fff;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+.loader:hover{
+    background: #45f3ff;
+    color: #1c1c1c;
+    box-shadow: 0 0 5px #45f3ff,
+    0 0 25px #45f3ff,
+    0 0 50px #45f3ff,
+    0 0 200px #45f3ff;
+}
+.loader span{
+    position: absolute;
+    display: block;
+}
+.loader span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg,transparent,#45f3ff);
+    animation: animate4 2s linear infinite;
+    animation-delay: 0s;
+}
+@keyframes animate4{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.loader span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg,transparent,#45f3ff);
+    animation: animate5 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate5{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+.loader span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#45f3ff);
+    animation: animate6 2s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate6{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.loader span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#45f3ff);
+    animation: animate7 2s linear infinite;
+    animation-delay: 1.5s;
+}
+@keyframes animate7{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+.loader h3{
+    font-family: consolas;
+    color: #45f3ff;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-right: 1px solid #45f3ff;
+}
+.loader:hover h3{
+    color: #1c1c1c;
+    border-right: 1px solid #1c1c1c;
+}
 
 
 
