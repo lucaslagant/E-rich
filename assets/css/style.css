@@ -875,7 +875,7 @@ ul li a{
     drop-shadow(0 0 40px var(--clr))
     drop-shadow(0 0 60px var(--clr));
 }
-/* <!==============================================  LOADING PAGE ================================================================================!>  */
+/* <!==============================================  LOADING AND ERROR PAGES================================================================================!>  */
 #loadingPage{
     display: flex;
     justify-content: center;
@@ -981,11 +981,9 @@ ul li a{
     color: #45f3ff;
     letter-spacing: 2px;
     transition: 0.5s;
-    border-right: 1px solid #45f3ff;
 }
 .loader:hover h3{
     color: #1c1c1c;
-    border-right: 1px solid #1c1c1c;
 }
 
 
