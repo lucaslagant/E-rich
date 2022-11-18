@@ -722,6 +722,26 @@ input[type="submit"]:active{
     font-weight: 800;
     color: #fff;
 }
+.blur{
+    animation: blur 10s;
+}
+@keyframes blur{
+    0%{
+        filter: blur(0.5px);
+    }
+    30%{
+        filter: blur(1px);
+    }
+    50%{
+        filter: blur(2px);
+    }
+    80%{
+        filter: blur(1.5px);
+    }
+    95%{
+        filter: blur(0px);
+    }
+}
 /* <!==============================================  CONTACT PAGE ================================================================================!>  */
 .contact{
     position: relative;

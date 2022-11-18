@@ -8,4 +8,12 @@ spinBtn.addEventListener("click", () =>{
     
     wheel.style.transition = 'all 8s ease';
     wheel.style.transform = `rotate(${deg}deg)`;
+    wheel.classList.add('blur');
 });
+
+
+
+let replay = document.getElementById("replay");
+replay.addEventListener("click", function() {
+    window.location.reload();
+})
